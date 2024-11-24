@@ -1,9 +1,27 @@
 import Image from "next/image";
+import Link from 'next/link';
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import About from './test/page'
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      {/* <Link href="/test">Test Page!</Link>
+      <TabGroup>
+        <TabList>
+          <Tab className="data-[selected]:bg-blue-500 data-[selected]:text-white data-[hover]:underline">Tab 1</Tab>
+          <Tab className="data-[selected]:bg-blue-500 data-[selected]:text-white data-[hover]:underline">Tab 2</Tab>
+          <Tab className="data-[selected]:bg-blue-500 data-[selected]:text-white data-[hover]:underline">Tab 3</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <About></About>
+          </TabPanel>
+          <TabPanel>Content 2</TabPanel>
+          <TabPanel>Content 3</TabPanel>
+        </TabPanels>
+      </TabGroup> */}
+      {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -95,7 +113,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
